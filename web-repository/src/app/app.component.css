@@ -1,0 +1,23 @@
+.root-container {
+  width: 100%;
+  height: 100%;
+}
+
+app-root-sidenav, app-root-content {
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.root-sidenav {
+  background-color: #F3F3F3;
+  border: none;
+}
+
+.root-content {
+  background-color: #FFFFFF;
+}
+
+@media screen and (max-width: 800px) {
+  app-root-sidenav {
+    display: none;
+  }
+}

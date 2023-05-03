@@ -1,0 +1,31 @@
+h1, h2 {
+  font-weight: unset;
+}
+
+h1 {
+  font-size: 64px;
+}
+
+h2 {
+  font-size: 37px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.logo-text {
+  margin: 15px 25px 0px 25px;
+}
+
+.navigation {
+  margin: 0 0 0 2vw;
+}
+
+.scroll-progress {
+  margin: 0;
+  padding: 0;
+  width: 3vw;
+  transform: rotate(90deg);
+}
