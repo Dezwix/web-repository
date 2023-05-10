@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./hello-section.component.scss']
 })
 export class HelloSectionComponent {
-
+  retypeContent: string = "programming";
 }

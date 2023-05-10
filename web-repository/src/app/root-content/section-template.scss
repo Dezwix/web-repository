@@ -1,0 +1,14 @@
+@mixin section-template($background-color, $title-color) {
+  .section-container {
+    width: 100%;
+    height: 100%;
+    background-color: $background-color;
+  }
+
+  .section-title {
+    color: $title-color;
+    font-size: 64px;
+    font-weight: normal;
+    text-align: center;
+  }
+}

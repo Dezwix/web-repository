@@ -1,0 +1,6 @@
+@import'../root-content/section-template';
+
+$background-color: #5B3893;
+$title-color: #fff;
+
+@include section-template($background-color, $title-color);
