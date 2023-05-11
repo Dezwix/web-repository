@@ -4,7 +4,13 @@
     <app-root-sidenav />
   </mat-sidenav>
 
-  <mat-sidenav-content class="root-content">
+  <mat-sidenav-content
+    class="root-content"
+    [class.hello-background]="helloInView"
+    [class.experience-background]="experienceInView"
+    [class.projects-background]="projectsInView"
+    [class.contact-background]="contactInView"
+  >
     <app-root-content />
   </mat-sidenav-content>
 

@@ -3,4 +3,4 @@
 $background-color: #7B342F;
 $title-color: #fff;
 
-@include section-template($background-color, $title-color);
+@include section-template($title-color);

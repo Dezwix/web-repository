@@ -1,8 +1,7 @@
-@mixin section-template($background-color, $title-color) {
+@mixin section-template($title-color) {
   .section-container {
     width: 100%;
     height: 100%;
-    background-color: $background-color;
   }
 
   .section-title {

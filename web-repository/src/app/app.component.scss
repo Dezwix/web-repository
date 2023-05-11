@@ -21,3 +21,23 @@ app-root-sidenav, app-root-content {
     display: none;
   }
 }
+
+.mat-sidenav-content {
+  transition: background-color 0.5s ease-in-out;
+}
+
+.hello-background {
+  background-color: #fff;
+}
+
+.experience-background {
+  background-color: #F5D974;
+}
+
+.projects-background {
+  background-color: #7B342F;
+}
+
+.contact-background {
+  background-color: #5B3893;
+}
