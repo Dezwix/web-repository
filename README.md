@@ -15,3 +15,10 @@ where the author is aiming with this project:
 ![experience-section](https://user-images.githubusercontent.com/55840079/236061155-78e66202-9b72-46ef-bb80-550786440c53.png)
 ![projects-section](https://user-images.githubusercontent.com/55840079/236061171-941fb6b1-cabd-45a4-b27c-d1887f5dea0f.png)
 ![contact-section](https://user-images.githubusercontent.com/55840079/236061179-46be65fa-8018-4141-a4ea-a163289f6949.png)
+
+## Deploy Notes
+To deploy a new build on GitHub Pages, from within `web-repository` folder, use the following:
+
+```
+ng deploy --base-href='https://aanseev.github.io/web-repository/'
+```
