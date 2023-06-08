@@ -1,7 +1,43 @@
+.stick-right {
+  justify-content: flex-end;
+  margin: 0 32px 0 0;
+  position: relative;
+}
+
 .headline {
-  img {
-    width:25px;
-  }
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
+  align-items: start;
+
+  img {
+    width:92px;
+    margin: 0 16px 0 16px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .title{
+    font-weight: bold;
+  }
+
+  .description {
+    width: 25vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 5px 0 0 35px;
+
+    .bullet {
+      font-size: 24px;
+    }
+  }
+
+  @media screen and (max-width: 1000px) {
+    .description {
+      width: 80%;
+    }
+  }
 }

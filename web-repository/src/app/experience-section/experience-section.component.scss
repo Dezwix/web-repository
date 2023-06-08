@@ -3,3 +3,8 @@
 $title-color: #000;
 
 @include section-template($title-color);
+
+.experience-wrap {
+  display: flex;
+  flex-flow: row wrap;
+}
