@@ -35,9 +35,13 @@
     }
   }
 
-  @media screen and (max-width: 1000px) {
-    .description {
+  @media screen and (max-width: 1150px) {
+    .headline {
       width: 80%;
+    }
+
+    .description {
+      width: 50vw;
     }
   }
 }

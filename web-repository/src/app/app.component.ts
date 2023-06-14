@@ -9,6 +9,7 @@ export class AppComponent {
   title = 'web-repository';
 
   private observer!: IntersectionObserver;
+  private experienceObserver!: IntersectionObserver;
   public helloInView = false;
   public experienceInView = false;
   public projectsInView = false;
@@ -32,6 +33,17 @@ export class AppComponent {
       rootMargin: '0px',
       threshold: 0.45
     });
+
+    this.experienceObserver = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.target.id === 'experience-section') {
+          this.experienceInView = entry.isIntersecting;
+        }
+      });
+    }, {
+      rootMargin: '0px',
+      threshold: 0.02
+    });
   }
 
   ngAfterViewInit() {
@@ -41,7 +53,7 @@ export class AppComponent {
     const contactComponent = document.querySelector('#contact-section')!;
 
     this.observer.observe(helloComponent);
-    this.observer.observe(experienceComponent);
+    this.experienceObserver.observe(experienceComponent);
     this.observer.observe(projectsComponent);
     this.observer.observe(contactComponent);
   }

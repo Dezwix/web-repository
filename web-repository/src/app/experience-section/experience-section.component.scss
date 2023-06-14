@@ -8,3 +8,9 @@ $title-color: #000;
   display: flex;
   flex-flow: row wrap;
 }
+
+@media screen and (max-width: 1150px) {
+  .experience-wrap {
+    justify-content: center;
+  }
+}
