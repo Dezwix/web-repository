@@ -4,9 +4,23 @@ $title-color: #000;
 
 @include section-template($title-color);
 
+.section-container {
+  width: 95%;
+  margin: auto;
+}
+
 .experience-wrap {
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
+
+  table {
+    width: 100%;
+  }
+}
+
+.mobile-experience-wrap {
+  display: none;
 }
 
 .right-section {
@@ -14,15 +28,27 @@ $title-color: #000;
   top: 300px;
 }
 
-@media screen and (max-width: 1520px) {
-  .right-section {
-    position: static;
-    top: 0px;
-  }
+app-experience-module {
+  width: 35%;
 }
 
-@media screen and (max-width: 1520px) {
-  .experience-wrap {
+// Switch from desktop to mobile
+@media screen and (max-width: 900px) {
+  .right-section {
+    top: 0px;
+  }
+
+  .mobile-experience-wrap {
+    display: flex;
+    flex-flow: row wrap;
     justify-content: center;
+  }
+
+  .experience-wrap {
+    display: none;
+  }
+
+  app-experience-module {
+    width: 100%;
   }
 }

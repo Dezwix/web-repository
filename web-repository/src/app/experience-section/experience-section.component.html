@@ -1,6 +1,71 @@
 <div class="section-container">
   <h1 class="section-title">Experience</h1>
+
+  <!-- structure for bigger screens (width > 1520px)-->
   <div class="experience-wrap">
+    <table>
+      <tr>
+        <td>
+          <app-experience-module
+            class="left-section"
+            logoPath="/assets/img/ck-logo.png"
+            title="Junior Software Engineer"
+            dateStart="2022, 8, 15"
+            dateEnd="2023, 3, 7"
+            companyName="Circle K Tech"
+            location="Kanata, ON"
+            [description]="
+            [
+              'Leveraged the Google Test C++ unit testing library to write unit tests for embedded systems',
+              'Tailor-made high-volume test simulation tools in Python for automated product integration testing for improving software reliability',
+              'Maintained ongoing support of web-based applications using PHP, JS, and jQuery, ensuring the delivery of products to meet allotted deadlines',
+              'Bidirectionally-engineered - and expectedly documented - full functionality of legacy .NET applications',
+              'Reviewed and updated software documentation using Confluence to coordinate applications\' development lifecycles'
+            ]"
+          />
+        </td>
+        <td>
+          <app-experience-module
+            class="right-section"
+            logoPath="/assets/img/cashcan-logo.png"
+            title="Intern React Native Developer"
+            dateStart="2021, 9, 6"
+            dateEnd="2021, 12, 17"
+            companyName="CashCan"
+            location="Ottawa, ON"
+            [description]="
+            [
+              'Transformed client\'s visual UI model into an Android application using React Native and TypeScript',
+              'Allowed consumer payment processing by integrating the Stripe platform into the application',
+              'Designed the application\'s architecture in compliance with the MVC design pattern, ensuring code maintainability',
+              'Used GitHub to ease integration and release processes'
+            ]"
+          />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <app-experience-module
+            logoPath="/assets/img/vodl-logo.png"
+            title="Intern Full-Stack Web-Developer"
+            dateStart="2021, 1, 4"
+            dateEnd="2021, 8, 24"
+            companyName="VODL"
+            location="Ottawa, ON"
+            [description]="
+            [
+              'Improved production-layer domain using Visual Studio, AdobeXD, Node.js, and Bootstrap 4 with CSS',
+              'Utilized MVC pipeline for expedited architecture design',
+              'Fielded both consultation and analytical services for development and production layers'
+            ]"
+          />
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!--structure for smaller screens (width <= 1520px) -->
+  <div class="mobile-experience-wrap">
     <app-experience-module
       class="left-section"
       logoPath="/assets/img/ck-logo.png"

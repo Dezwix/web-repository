@@ -1,10 +1,14 @@
-<div class="headline" [ngClass]="{'stick-right': stickRight == true}">
-  <img src="{{logoPath}}"/>
-  <div>
-    <h3 class="title">{{title}}</h3>
-    <h3>{{dateStart | date : "MMMM y"}} - {{dateEnd | date : "MMMM y"}}</h3>
-    <h3>{{companyName}} | {{location}}</h3>
-    <ul class="description" >
+<div class="module-wrap" [ngClass]="{'stick-right': stickRight == true}">
+  <div class="headline">
+    <img src="{{logoPath}}"/>
+    <div>
+      <h3 class="title">{{title}}</h3>
+      <h3>{{dateStart | date : "MMM y"}} - {{dateEnd | date : "MMM y"}}</h3>
+      <h3>{{companyName}} | {{location}}</h3>
+    </div>
+  </div>
+  <div class="description">
+    <ul>
       <li *ngFor="let bullet of description" class="bullet">{{bullet}}</li>
     </ul>
   </div>
