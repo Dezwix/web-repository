@@ -1,0 +1,120 @@
+.stick-right {
+  justify-content: flex-end;
+  margin: 0 32px 0 0;
+  position: relative;
+}
+
+.headline {
+  display: flex;
+  flex-flow: row;
+  width: 95%;
+}
+
+.module-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: start;
+  margin-bottom: 100px;
+
+
+  img {
+    width:92px;
+    height:92px;
+    margin: 0 16px 0 16px;
+  }
+
+  h3 {
+    font-size: 32px;
+    font-weight: normal;
+    margin: 0;
+  }
+
+  .title{
+    font-weight: bold;
+  }
+
+  .description {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+
+    ul{
+      width: 80%;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      padding: 5px 0 0 35px;
+
+      .bullet {
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+
+// Adjusts fonts and images for smaller widths
+@media screen and (max-width: 1450px) {
+  .module-wrap {
+    img {
+      width:86px;
+      height:86px;
+      margin: 0 15px 0 15px;
+    }
+
+    h3 {
+      font-size: 26px;
+    }
+
+    .description {
+      ul{
+        padding: 4px 0 10px 33px;
+
+        .bullet {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+
+// Switch from desktop to mobile
+@media screen and (max-width: 900px) {
+  .module-wrap {
+    width: 80%;
+    margin: 0px;
+
+    img {
+      width:69px;
+      height:69px;
+      margin: 0 12px 0 12px;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    .description {
+      ul{
+        width: 80%;
+        padding: 3px 0 10px 26px;
+      }
+    }
+  }
+}
+
+// Adjust for screens smaller than 650px
+@media screen and (max-width: 650px) {
+  .module-wrap {
+    width: 100%;
+
+    .description {
+      justify-content: center;
+      ul{
+        .bullet {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

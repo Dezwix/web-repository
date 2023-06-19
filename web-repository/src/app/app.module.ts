@@ -12,6 +12,7 @@ import { HelloSectionComponent } from './hello-section/hello-section.component';
 import { ExperienceSectionComponent } from './experience-section/experience-section.component';
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { ExperienceModuleComponent } from './experience-module/experience-module.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     HelloSectionComponent,
     ExperienceSectionComponent,
     ProjectsSectionComponent,
-    ContactSectionComponent
+    ContactSectionComponent,
+    ExperienceModuleComponent
   ],
   imports: [
     BrowserModule,

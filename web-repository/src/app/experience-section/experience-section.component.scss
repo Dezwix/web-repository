@@ -3,3 +3,52 @@
 $title-color: #000;
 
 @include section-template($title-color);
+
+.section-container {
+  width: 95%;
+  margin: auto;
+}
+
+.experience-wrap {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+
+  table {
+    width: 100%;
+  }
+}
+
+.mobile-experience-wrap {
+  display: none;
+}
+
+.right-section {
+  position: relative;
+  top: 300px;
+}
+
+app-experience-module {
+  width: 35%;
+}
+
+// Switch from desktop to mobile
+@media screen and (max-width: 900px) {
+  .right-section {
+    top: 0px;
+  }
+
+  .mobile-experience-wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .experience-wrap {
+    display: none;
+  }
+
+  app-experience-module {
+    width: 100%;
+  }
+}
