@@ -31,3 +31,9 @@
 .app-experience-section {
   justify-content: center;
 }
+
+@media screen and (max-width: 900px) {
+  #projects-section {
+    height: fit-content;
+  }
+}

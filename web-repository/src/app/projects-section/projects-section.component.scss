@@ -19,3 +19,18 @@ $title-color: #fff;
   justify-content: space-evenly;
   width: 95%;
 }
+
+@media screen and (max-width:1150px) {
+  .projects-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .projects-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
