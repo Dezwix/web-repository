@@ -4,3 +4,18 @@ $background-color: #7B342F;
 $title-color: #fff;
 
 @include section-template($title-color);
+
+.section-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+  height: 95%;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  width: 95%;
+}

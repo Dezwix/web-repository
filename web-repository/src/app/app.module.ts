@@ -13,6 +13,7 @@ import { ExperienceSectionComponent } from './experience-section/experience-sect
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { ExperienceModuleComponent } from './experience-module/experience-module.component';
+import { ProjectModuleComponent } from './project-module/project-module.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ExperienceModuleComponent } from './experience-module/experience-module
     ExperienceSectionComponent,
     ProjectsSectionComponent,
     ContactSectionComponent,
-    ExperienceModuleComponent
+    ExperienceModuleComponent,
+    ProjectModuleComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,67 @@
+.module-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 20vw;
+
+  .title {
+    color: white;
+    font-size: 48px;
+    font-weight: 400;
+    margin: 0 0 15px 0;
+  }
+
+  .thumbnail {
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.3s;
+    opacity: 0.9;
+  }
+
+  .thumbnail:hover {
+    width: 100%;
+    border-radius: 5px;
+    opacity: 1;
+  }
+
+  .try-it {
+    width: 50%;
+    background-color: #FA5C5C;
+    color: white;
+    margin: 15px 0 0 0;
+    padding: 5px;
+    border: 0;
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+    transition: 0.3s;
+  }
+
+  .try-it:hover {
+    background-color: #c04545;
+    color: white;
+    border-radius: 5px;
+    font-size: 32px;
+  }
+
+  .no-try {
+    @extend .try-it;
+    background-color: #55934F;
+  }
+
+  .no-try:hover {
+    @extend .try-it, :hover;
+    background-color: #55934F;
+    border-radius: 0;
+  }
+
+  .hide-try{
+    display: none;
+  }
+
+  .description {
+    color: white;
+    width: 90%;
+  }
+}
+
+

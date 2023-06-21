@@ -1,0 +1,23 @@
+<div class="module-wrap">
+  <h2 class="title">{{ title }}</h2>
+  <a href="{{thumbnailLink}}" target="{{linkTarget}}">
+    <img class="thumbnail" src="{{thumbnailPath}}" alt="thumbnail" />
+  </a>
+
+  <!-- Appears only if hide-try is false -->
+  <button
+    class="try-it"
+    (click)="OpenLink(thumbnailLink, linkTarget)"
+    [ngClass]="{'hide-try': tryIt == false}"
+    >Try it!
+  </button>
+
+  <!-- Appears only if hide-try is true -->
+  <button
+    class="no-try"
+    [ngClass]="{'hide-try': tryIt == true}"
+    disabled
+    >You're here!
+  </button>
+  <p class="description">{{ description }}</p>
+</div>

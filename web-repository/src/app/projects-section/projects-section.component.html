@@ -1,3 +1,31 @@
+<h1 class="section-title">Projects</h1>
 <div class="section-container">
-  <h1 class="section-title">Projects</h1>
+  <div class="projects-container">
+    <app-project-module
+      title="Web Resume"
+      thumbnailLink="#"
+      linkTarget="_self"
+      thumbnailPath="/assets/img/aanseev-preview.png"
+      [tryIt]="false"
+      description="A website that outlines my experiences and serves as a hub for al my projects at the same time. You are here right now!"
+    />
+
+    <app-project-module
+      title="Thyf"
+      thumbnailPath="/assets/img/thyf-preview.png"
+      thumbnailLink="https://aanseev.itch.io/thyf"
+      linkTarget="_blank"
+      [tryIt]="true"
+      description="Thyf — originating from 'thief', is a simple concept platformer, where jumping is substituted with a teleportation technique."
+    />
+
+    <app-project-module
+      title="Trerath"
+      thumbnailPath="/assets/img/trerath-preview.png"
+      thumbnailLink="https://aanseev.itch.io/trerath"
+      linkTarget="_blank"
+      [tryIt]="true"
+      description="A top-down 3D maze with coins and ominous lighting. Collect all coins to get to the next level"
+    />
+  </div>
 </div>
