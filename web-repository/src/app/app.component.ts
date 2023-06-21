@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'web-repository';
 
   private observer!: IntersectionObserver;
-  private experienceObserver!: IntersectionObserver;
+  private flexibleObserver!: IntersectionObserver;
   public helloInView = false;
   public experienceInView = false;
   public projectsInView = false;
@@ -34,10 +34,12 @@ export class AppComponent {
       threshold: 0.45
     });
 
-    this.experienceObserver = new IntersectionObserver(entries => {
+    this.flexibleObserver = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.target.id === 'experience-section') {
           this.experienceInView = entry.isIntersecting;
+        } else if (entry.target.id === 'projects-section') {
+          this.projectsInView = entry.isIntersecting;
         }
       });
     }, {
@@ -53,9 +55,17 @@ export class AppComponent {
     const contactComponent = document.querySelector('#contact-section')!;
 
     this.observer.observe(helloComponent);
-    this.experienceObserver.observe(experienceComponent);
-    this.observer.observe(projectsComponent);
+    this.observer.observe(experienceComponent);
     this.observer.observe(contactComponent);
+
+    // The reason why we're not observing projects with default observer,
+    // but observe experience with both default and flexible observers,
+    // is that projects section gets too long in mobile and default observer
+    // breaks both observers.
+    // this.observer.observe(projectsComponent);
+
+    this.flexibleObserver.observe(experienceComponent);
+    this.flexibleObserver.observe(projectsComponent);
   }
 
 

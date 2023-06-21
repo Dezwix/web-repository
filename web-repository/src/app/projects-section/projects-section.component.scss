@@ -4,3 +4,33 @@ $background-color: #7B342F;
 $title-color: #fff;
 
 @include section-template($title-color);
+
+.section-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-top: 5%;
+  height: 95%;
+}
+
+.projects-container {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  width: 95%;
+}
+
+@media screen and (max-width:1150px) {
+  .projects-container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .projects-container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
