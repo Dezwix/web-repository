@@ -4,3 +4,25 @@ $background-color: #5B3893;
 $title-color: #fff;
 
 @include section-template($title-color);
+
+.email-box {
+  width: 100px;
+  height: 75px;
+  background-color: #C20A0A;
+  color: $title-color;
+}
+
+.linkedin-box {
+  width: 100px;
+  height: 75px;
+  background-color: #0A66C2;
+  color: $title-color;
+}
+
+
+.discord-box {
+  width: 100px;
+  height: 75px;
+  background-color: #5562EA;
+  color: $title-color;
+}
