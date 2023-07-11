@@ -13,6 +13,8 @@ h2 {
 a {
   text-decoration: none;
   color: #000;
+  transition: background-color 0.25s ease-in-out;
+  transition: color 0.25s ease-in-out;
 }
 
 .logo-text {
@@ -20,5 +22,33 @@ a {
 }
 
 .navigation {
-  margin: 0 0 0 2vw;
+  width: 100%;
+
+  a {
+    padding: 0 0 0 2vw;
+    display: grid;
+    height: 60px;
+    align-items: center;
+  }
+
+  a:hover {
+    color: #fff;
+    background-color: #000;
+  }
+}
+
+.sidenavInverted {
+  .logo-text {
+    color: #fff;
+  }
+
+  a {
+    color: #fff;
+  }
+  .navigation {
+    a:hover {
+      color: #000;
+      background-color: #fff;
+    }
+  }
 }
