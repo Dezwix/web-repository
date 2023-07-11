@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-root-sidenav',
@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./root-sidenav.component.scss']
 })
 export class RootSidenavComponent {
-
+  @Input() projectsInView = false;
+  @Input() contactInView = false;
 }

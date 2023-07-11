@@ -10,6 +10,7 @@ app-root-sidenav, app-root-content {
 .root-sidenav {
   background-color: #F3F3F3;
   border: none;
+  transition: background-color 0.5s ease-in-out;
 }
 
 .root-content {
@@ -26,6 +27,10 @@ app-root-sidenav, app-root-content {
   transition: background-color 0.5s ease-in-out;
 }
 
+.hello-sidenav {
+  background-color: #F3F3F3;
+}
+
 .hello-background {
   background-color: #fff;
 }
@@ -34,10 +39,22 @@ app-root-sidenav, app-root-content {
   background-color: #F5D974;
 }
 
+.experience-sidenav {
+  background-color: #C8B367;
+}
+
 .projects-background {
   background-color: #7B342F;
 }
 
+.projects-sidenav {
+  background-color: #6C3733;
+}
+
 .contact-background {
   background-color: #5B3893;
+}
+
+.contact-sidenav {
+  background-color: #543A7E;
 }

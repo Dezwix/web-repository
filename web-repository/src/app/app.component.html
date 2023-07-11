@@ -1,7 +1,12 @@
 <mat-sidenav-container class="root-container">
 
-  <mat-sidenav class="root-sidenav" mode="side" opened>
-    <app-root-sidenav />
+  <mat-sidenav class="root-sidenav" mode="side" opened
+    [class.hello-sidenav]="helloInView"
+    [class.experience-sidenav]="experienceInView"
+    [class.projects-sidenav]="projectsInView"
+    [class.contact-sidenav]="contactInView"
+    >
+    <app-root-sidenav [projectsInView]="projectsInView" [contactInView]="contactInView"/>
   </mat-sidenav>
 
   <mat-sidenav-content
